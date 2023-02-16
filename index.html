@@ -1,0 +1,182 @@
+<html>
+
+<head>
+  <title>The Adventures of Timmy</title>
+  <link href="style.css" rel="stylesheet" type="text/css" />
+</head>
+<style>
+  body {
+    background: black;
+    background-size: cover;
+    font-family: Play;
+  }
+
+  a {
+    color: mediumseagreen;
+  }
+
+  .c1 {
+    display: inline-block;
+  }
+
+  .c2 {
+    display: inline-block;
+  }
+
+  .c3 {
+    display: inline-block;
+  }
+
+  .c4 {
+    display: inline-block;
+  }
+.cw {
+  display: inline-block;
+}
+  .cyf2 {
+    display: inline-block;
+  }
+.taotline {
+    display: inline-block;
+  }
+  
+  h1 {
+    font-size: 3.2rem;
+    color: lime;
+    margin-top: 1%;
+  }
+
+  h1 .welcome {
+    font-size: 2.5rem;
+    overflow: hidden;
+     
+    white-space: nowrap;
+    width: 0;
+    animation:
+      typing 500ms steps(10, end) forwards;
+  }
+
+   
+
+
+  h1 .type {
+    font-size: 2.5rem;
+    overflow: hidden;
+     
+    white-space: nowrap;
+    width: 0;
+    animation:
+      typing 2s steps(43, end) forwards;
+    animation-delay: 2s;
+  }
+
+  h1 .type2 {
+    font-size: 2.5rem;
+    overflow: hidden;
+     
+    white-space: nowrap;
+    width: 0;
+    animation:
+      typing 1s steps(21, end) forwards;
+    animation-delay: 4s;
+  }
+
+  h1 .type3 {
+    font-size: 2.5rem;
+    overflow: hidden;
+     
+    white-space: nowrap;
+    width: 0;
+    animation:
+      typing 1s steps(28, end) forwards;
+    animation-delay: 5s;
+  }
+
+  @keyframes typing {
+    from {
+      width: 0
+    }
+
+    to {
+      width: 100%
+    }
+  }
+
+  @keyframes blink {
+    from {
+      border-color: transparent
+    }
+
+    to {
+      border-color: white;
+    }
+  }
+
+
+
+
+  h1 .cyfii {
+    font-size: 200px;
+    overflow: hidden;
+     
+    white-space: nowrap;
+    width: 0;
+    animation:
+      typing 500ms steps(5, end) forwards;
+      animation-delay: 500ms;
+  }
+
+
+  h1 .taot {
+    font-size: 41px;
+    overflow: hidden;
+     
+    white-space: nowrap;
+    width: 0;
+    animation:
+      typing 1s steps(23, end) forwards;
+      animation-delay: 1s;
+  }
+</style>
+
+<body>
+  <link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=Play" />
+  <h1>
+    <div class='cw'>
+    <div class="welcome">Welcome to:</div>
+    </div>
+    <br>
+    <div class='cyf2'>
+      <div class="cyfii">CYF II</div>
+    </div>
+    <br>
+    <div class='taotline'>
+      <div class="taot">The Adventures Of Timmy</div>
+    </div>
+    <br>
+  </h1>
+
+  <h1>
+    <div class="c1">
+      <div class="type">Developed by Shark Development Incorporated</div>
+    </div>
+    </br>
+    <div class="c2">
+      <div class="type2">Written by Blue Allmon</div>
+    </div>
+    </br>
+    <div class="c3">
+      <div class="type3">For more credits, click <a href="/credit">here</a></div>
+    </div>
+    <br></br>
+
+  </h1>
+  <button class="glow-on-hover" onclick="sendStartGame()" type="button">Start Game</button>
+  <script>
+
+    function sendStartGame() {
+      window.location.href = "/play";
+    }a
+  </script>
+
+</html>
