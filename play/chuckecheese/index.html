@@ -11,6 +11,32 @@
     font-family: Play;
   }
 
+  .glow-on-hover {
+
+    opacity: 0;
+
+    animation-name: opacityOn;
+    animation-duration: 500ms;
+    animation-delay: 11s;
+    animation-fill-mode: forwards;
+    animation-iteration-count: 1;
+
+
+
+  }
+
+  @keyframes opacityOn {
+    0% {
+      opacity: 0;
+    }
+
+    100% {
+      opacity: 1;
+    }
+  }
+
+
+
   a {
     color: mediumseagreen;
   }
@@ -196,15 +222,29 @@
 
   </h1>
 
-  <button class="glow-on-hover" onclick="sendCHUCK()" type="button">Go into the Ball Pit</button>
-  <button class="glow-on-hover" onclick="sendEXTERIOR()" type="button">Go into the Ticket Blaster</button>
-  <button class="glow-on-hover" onclick="sendMOVIE()" type="button">Go to the movies</button>
-  <button class="glow-on-hover" onclick="sendNOTHING()" type="button">Do nothing</button>
+  <button class="glow-on-hover" onclick="sendBALL()" type="button">Go into the Ball Pit</button>
+  <button class="glow-on-hover" onclick="sendTICKET()" type="button">Go into the Ticket Blaster</button>
+  <button class="glow-on-hover" onclick="sendFRIEND()" type="button">Go to your friend</button>
+  <button class="glow-on-hover" onclick="sendIDPT()" type="button">Go to the Indoor-playground thingy</button>
   <script>
 
-    function sendCHUCK() {
-      window.location.href = "/play/chuckecheese";
+    function sendBALL() {
+      window.location.href = "/play/chuckecheese/ballpit";
     }
+    function sendTICKET() {
+      window.location.href = "/play/chuckecheese/ticket";
+    }
+
+    function sendFRIEND() {
+      window.location.href = "/play/chuckecheese/friend";
+    }
+
+    function sendIDPT() {
+      window.location.href = "/play/chuckecheese/idpt";
+    }
+
+
+
   </script>
 
 

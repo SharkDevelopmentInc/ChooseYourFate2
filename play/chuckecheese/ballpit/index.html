@@ -2,7 +2,7 @@
 
 <head>
   <title>The Adventures of Timmy</title>
-  <link href="style.css" rel="stylesheet" type="text/css" />
+  <link href="/style.css" rel="stylesheet" type="text/css" />
 </head>
 <style>
   body {
@@ -11,13 +11,14 @@
     font-family: Play;
   }
 
+
   .glow-on-hover {
 
     opacity: 0;
 
     animation-name: opacityOn;
     animation-duration: 500ms;
-    animation-delay: 11s;
+    animation-delay: 12s;
     animation-fill-mode: forwards;
     animation-iteration-count: 1;
 
@@ -95,7 +96,7 @@
     white-space: nowrap;
     width: 0;
     animation:
-      typing 2s steps(61, end) forwards;
+      typing 2s steps(75, end) forwards;
     animation-delay: 2s;
   }
 
@@ -106,7 +107,7 @@
     white-space: nowrap;
     width: 0;
     animation:
-      typing 2s steps(46, end) forwards;
+      typing 2s steps(65, end) forwards;
     animation-delay: 4s;
   }
 
@@ -117,7 +118,7 @@
     white-space: nowrap;
     width: 0;
     animation:
-      typing 2s steps(63, end) forwards;
+      typing 2s steps(52, end) forwards;
     animation-delay: 6s;
   }
 
@@ -128,7 +129,7 @@
     white-space: nowrap;
     width: 0;
     animation:
-      typing 2s steps(31, end) forwards;
+      typing 2s steps(68, end) forwards;
     animation-delay: 8s;
   }
 
@@ -139,7 +140,7 @@
     white-space: nowrap;
     width: 0;
     animation:
-      typing 1s steps(28, end) forwards;
+      typing 2s steps(77, end) forwards;
     animation-delay: 10s;
   }
 
@@ -194,45 +195,56 @@
   <link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=Play" />
   <h1>
     <div class='cw'>
-      <div class="welcome">2243 Hargrove St. Ohio city, Ohio:</div>
+      <div class="welcome">Charles Entertainment Cheese, Ohio city branch. Ballpit:</div>
     </div>
     <br>
   </h1>
 
   <h1>
     <div class="c1">
-      <div class="type">This is Timmy. His life is a spiral of suffering and disease.
+      <div class="type">Timmy approaches the ballpit. There is a foul stench coming from within it.
       </div>
-      <div class='typeyog'>You are god, and you will
-        decide
-        Timmy's fate.</div>
+      <div class='typeyog'>But, as usual, Timmy takes a big leap and jumps into the ballpit.</div>
     </div>
     </br>
     <br>
     <div class="c2">
-      <div class="type2">You will decide how timmy spends his day, and this in turn will</div>
-      <div class='typewill'> decide what disease Timmy gets.
+      <div class="type2">Later when Timmy goes home, he feels a little funny.</div>
+      <div class='typewill'>The next morning, Timmy is having stomach cramps and he is vomiting.
       </div>
     </div>
     </br>
     <br>
     <div class="c3">
-      <div class="type3">What would you like timmy to?</div>
+      <div class="type3">Timmy has received Dysentery. Dysentery is a fatal disease in young children.</div>
     </div>
     <br></br>
 
   </h1>
 
-  <button class="glow-on-hover" onclick="sendCHUCK()" type="button">Go to Chuck E. Cheese</button>
-  <button class="glow-on-hover" onclick="sendEXTERIOR()" type="button">Go outside</button>
-  <button class="glow-on-hover" onclick="sendMOVIE()" type="button">Go to the movies</button>
-  <button class="glow-on-hover" onclick="sendNOTHING()" type="button">Do nothing</button>
+  <button class="glow-on-hover" onclick="sendRESTART()" type="button">Return to last safe area</button>
+  <button class="glow-on-hover" onclick="sendRESENDSTART()" type="button">Return to start</button>
+  <button class="glow-on-hover" onclick="sendQUIT()" type="button">Rage quit</button>
   <script>
 
-    function sendCHUCK() {
-      window.location.href = "/play/chuckecheese";
+    function sendRESTART() {
+      window.location.href = "/play/chuckecheese/";
     }
+    function sendRESENDSTART() {
+      window.location.href = "/play/";
+    }
+
+    function sendQUIT() {
+      window.location.href = "https://www.youtube.com/watch?v=dQw4w9WgXcQ"
+    }
+
+
+
+
   </script>
+
+  <audio autoplay="true" src="death12s.mp3">
+
 
 
 </html>
